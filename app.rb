@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
 require 'mechanize'
 
 set :server, 'thin'
