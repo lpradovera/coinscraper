@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %title Klappo Scraper
+    %link{ rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css', type: 'text/css' }
+    %script{ src:'//code.jquery.com/jquery-2.1.0.min.js' }
+    %script{ src:'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js' }
+    %script{ src:'js/jquery.blockUI.js' }
+
+    :css
+      body {
+        padding-top: 60px;
+      }
+      #result {
+        display: none;
+      }
+      #image {
+        max-width: 100%;
+      }
+      #result .list-group-item-text {
+        color: #333;
+        font-weight: bold;
+      }
+      .credits {
+        margin-top: 20px;
+      }
+  %body
+    %nav.navbar.navbar-default.navbar-fixed-top{role: "navigation"}
+      .navbar-header
+        .container
+          %a.navbar-brand{href: "/"} Klappo Scraper
+    .container
+      = yield
+
