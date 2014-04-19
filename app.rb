@@ -28,5 +28,5 @@ get '/' do
     end
   end
 
-  {status: result}.to_json
+  result.to_json
 end
